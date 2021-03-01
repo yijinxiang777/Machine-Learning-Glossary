@@ -1,0 +1,33 @@
+---
+title: "Glossary"
+author: "Yijin Xaing"
+date: "2/28/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Definitions and explanations of terms in the book [THE HUNDRED-PAGE MACHINE LEARNING BOOK](http://themlbook.com) written by Andriy Burkov
+
+
+### supervised learning
+### dataset
+### labeled examples
+$\{(x_{i},y_{i})\}_{i=1}^{N}$ 
+
+### feature vector
+### feature
+### label
+### classes
+### unsupurvised learning
+### unlabled exmples
+$\{(x_{i})\}_{i=1}^{N}$    
+
+### model
+### clustering
+### dimensionality reduction
+### outlier detection
+
+### semi-supervised learning
