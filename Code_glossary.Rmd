@@ -29,5 +29,4 @@ $\{(x_{i})\}_{i=1}^{N}$
 ### clustering
 ### dimensionality reduction
 ### outlier detection
-
 ### semi-supervised learning
