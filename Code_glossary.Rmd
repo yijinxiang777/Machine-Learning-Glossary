@@ -1,27 +1,43 @@
 ---
 title: "Glossary"
 author: "Yijin Xaing"
-date: "2/28/2021"
-output: html_document
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+  # html_notebook:
+  #   toc: yes
+  #  toc_float: yes
+minutes: 300
+layout: page
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+Definitions and explanations of terms in the book [THE HUNDRED-PAGE MACHINE LEARNING BOOK](http://themlbook.com) written by Andriy Burkov  
 
-Definitions and explanations of terms in the book [THE HUNDRED-PAGE MACHINE LEARNING BOOK](http://themlbook.com) written by Andriy Burkov
+### supervised learning   
+aaa  
 
+### dataset  
+aaa  
 
-### supervised learning
-### dataset
 ### labeled examples
-$\{(x_{i},y_{i})\}_{i=1}^{N}$ 
+$\{(x_{i},y_{i})\}_{i=1}^{N}$  
 
-### feature vector
-### feature
-### label
-### classes
+### feature vector  
+aaa   
+
+### feature  
+aaa  
+
+### label  
+aaa  
+
+### classes  
+aaa  
+
 ### unsupurvised learning
+aaa  
+
 ### unlabled exmples
 $\{(x_{i})\}_{i=1}^{N}$    
 
@@ -33,7 +49,6 @@ $\{(x_{i})\}_{i=1}^{N}$
 ### reinforcement learning
 ### bag of words
 ### support vector machine (SVM)
-### dataset
 ### learning algorithm
 
 ### decision boundary
