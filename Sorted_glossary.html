@@ -272,7 +272,10 @@ div.tocify {
 
 <div id="accuracy" class="section level3">
 <h3>accuracy</h3>
-<p>The ratio of examples whose labels are predicted correctly. <span class="math display">\[\frac{true \ positive + true \ negative}{all  \ cases}\]</span> ### bag of words</p>
+<p>The ratio of examples whose labels are predicted correctly. <span class="math display">\[\frac{true \ positive + true \ negative}{all  \ cases}\]</span></p>
+</div>
+<div id="bag-of-words" class="section level3">
+<h3>bag of words</h3>
 </div>
 <div id="classes" class="section level3">
 <h3>classes</h3>
@@ -313,7 +316,7 @@ div.tocify {
 </div>
 <div id="labeled-examples" class="section level3">
 <h3>labeled examples</h3>
-<p><span class="math inline">\(\{(x_{i},y_{i})\}_{i=1}^{N}\)</span></p>
+<p>A dataset contains both outcome (label) and covraites (features), from which models learn, in supervised training . <span class="math inline">\(\{(x_{i},y_{i})\}_{i=1}^{N}\)</span></p>
 </div>
 <div id="learning-algorithm" class="section level3">
 <h3>learning algorithm</h3>
@@ -337,19 +340,40 @@ div.tocify {
 </div>
 <div id="reinforcement-learning" class="section level3">
 <h3>reinforcement learning</h3>
+<p>Machine lives in an environment and is capable of perceiving state. Machine executes actions that yield different rewards and move machine into another state. Goal of reinforcement learning is for machine to learn a “policy” - a function that takes feaeture vector as input (state) and outputs optimal action (i.e., maximizing expected average reward).</p>
+<p><strong>Case study</strong></p>
+<p>Zhang and Bareinboim (2020)</p>
+</div>
+<div id="scalar" class="section level3">
+<h3>scalar</h3>
+<p>Simple numerical value, like 15 or -3.25. Variables or constants that take scalar valuees are denoted by an italic letter, like x or a.</p>
 </div>
 <div id="semi-supervised-learning" class="section level3">
 <h3>semi-supervised learning</h3>
+<p>It is the same as supervised learning, except that there are more feature vectors (covariates) than there are labeled outputs (outcomes). The rationale is to improve performance of supervised learning model using more feature vectors. The goal is typically to develop an algorithm that predicts outcomes or classifies observations with both missing and observed outcome values.</p>
+<p>We can also call it regression with missing data - to train models on complete data, and use these models to predict outcomes for observations without outcomes.</p>
+<p><strong>Case study</strong><br />
+<em>Background</em> Fetal weight and continuum of fetal growth have been identified as indicators for perinatal and childhood outcomes. However, most of the attempts to proxy the measurement were based on population referents and standards. <em>Methods</em> Fetal weight predictions for each gestational week per person were compared to actual fetal weight measurements obtained using standard ultrasound protocols. <span class="math inline">\(\gamma(Y|X=x)=h(x)\)</span></p>
 </div>
 <div id="statistical-model" class="section level3">
 <h3>statistical model</h3>
 </div>
 <div id="supervised-learning" class="section level3">
 <h3>supervised learning</h3>
-<p>aaa</p>
+<p>Regressing an outcome (referred to as labels) regressed against covariates (or eatures).<br />
+The goal is to use data to produce a model that takes features as input and outputs information about label.</p>
+<p><strong>Methods</strong>: SVM</p>
+<p><strong>Case study</strong></p>
 </div>
 <div id="support-vector-machine-svm" class="section level3">
 <h3>support vector machine (SVM)</h3>
+<p><span class="math inline">\(y=sign(\boldsymbol{wx}-b)\)</span></p>
+<ul>
+<li><p>sign() operator is a function that returns -1 if the sign of the argument in the parentheses is negative, and +1 otherwise.</p></li>
+<li><p><span class="math inline">\(\boldsymbol{wx}\)</span> is a feature vector and parameters, which can be rewritten as the sum of products between parameters and variables.</p></li>
+<li><p><span class="math inline">\(b\)</span> is an intercept parameter</p></li>
+<li><p>Objective of the fitting procedure: finding a set of values for <span class="math inline">\(\boldsymbol{\bar{w}}\)</span> and <span class="math inline">\(\bar{b}\)</span> that make the output from <span class="math inline">\(sign(\boldsymbol{wx}-b)\)</span> as close to the oberved values of y as possible.</p></li>
+</ul>
 </div>
 <div id="training" class="section level3">
 <h3>training</h3>
@@ -360,7 +384,14 @@ div.tocify {
 </div>
 <div id="unsupurvised-learning" class="section level3">
 <h3>unsupurvised learning</h3>
-<p>aaa</p>
+<p>An analysis of unlabeled (i.e., no outcome) data.<br />
+A collection of unlabeled variables is used to create a model that solves “practical problem” such as cluster detection, dimension reduction, or outlier detection.</p>
+<p><strong>Case study</strong><br />
+Plan to put the example of Kim (2020 here)</p>
+</div>
+<div id="vector" class="section level3">
+<h3>vector</h3>
+<p>An ordered list of scalar values.</p>
 </div>
 
 

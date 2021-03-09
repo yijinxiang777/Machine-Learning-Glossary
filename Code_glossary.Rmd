@@ -5,7 +5,7 @@ output:
   html_document:
     toc: yes
     toc_float: yes
-  # html_notebook:
+  html_notebook:
   #   toc: yes
   #  toc_float: yes
 minutes: 300
@@ -15,12 +15,19 @@ layout: page
 Definitions and explanations of terms in the book [THE HUNDRED-PAGE MACHINE LEARNING BOOK](http://themlbook.com) written by Andriy Burkov  
 
 ### supervised learning   
-aaa  
+Regressing an outcome (referred to as labels) regressed against covariates (or eatures).  
+The goal is to use data to produce a model that takes features as input and outputs information about label.  
+
+**Methods**: SVM
+
+**Case study**     
+  
 
 ### dataset  
 aaa  
 
 ### labeled examples
+A dataset contains both outcome (label) and covraites (features), from which models learn, in supervised training .
 $\{(x_{i},y_{i})\}_{i=1}^{N}$  
 
 ### feature vector  
@@ -36,7 +43,11 @@ aaa
 aaa  
 
 ### unsupurvised learning
-aaa  
+An analysis of unlabeled (i.e., no outcome) data.   
+A collection of unlabeled variables is used to create a model that solves "practical problem" such as cluster detection, dimension reduction, or outlier detection.  
+
+**Case study**  
+Plan to put the example of Kim (2020 here)
 
 ### unlabled exmples
 $\{(x_{i})\}_{i=1}^{N}$    
@@ -45,10 +56,34 @@ $\{(x_{i})\}_{i=1}^{N}$
 ### clustering
 ### dimensionality reduction
 ### outlier detection
-### semi-supervised learning
+### semi-supervised learning  
+It is the same as supervised learning, except that there are more feature vectors (covariates) than there are labeled outputs (outcomes). The rationale is to improve performance of supervised learning model using more feature vectors. The goal is typically to develop an algorithm that predicts outcomes or classifies observations with both missing and observed outcome values.    
+
+We can also call it regression with missing data - to train models on complete data, and use these models to predict outcomes for observations without outcomes.  
+
+**Case study**  
+*Background* Fetal weight and continuum of fetal growth have been identified as indicators for perinatal and childhood outcomes. However, most of the attempts to proxy the measurement were based on population referents and standards. 
+*Methods* Fetal weight predictions for each gestational week per person were compared to actual fetal weight measurements obtained using standard ultrasound protocols. $\gamma(Y|X=x)=h(x)$   
+
+
 ### reinforcement learning
+Machine lives in an environment and is capable of perceiving state. Machine executes actions that yield different rewards and move machine into another state. Goal of reinforcement learning is for machine to learn a "policy" - a function that takes feaeture vector as input (state) and outputs optimal action (i.e., maximizing expected average reward).  
+
+**Case study** 
+Zhang and Bareinboim (2020)  
+
 ### bag of words
 ### support vector machine (SVM)
+$y=sign(\boldsymbol{wx}-b)$    
+
+- sign() operator is a function that returns -1 if the sign of the argument in the parentheses is negative, and +1 otherwise.  
+
+- $\boldsymbol{wx}$ is a feature vector and parameters, which can be rewritten as the sum of products between parameters and variables.   
+
+- $b$ is an intercept parameter  
+
+- Objective of the fitting procedure: finding a set of values for $\boldsymbol{\bar{w}}$ and $\bar{b}$ that make the output from $sign(\boldsymbol{wx}-b)$ as close to the oberved values of y as possible.  
+
 ### learning algorithm
 
 ### decision boundary
@@ -75,3 +110,9 @@ How well the model will clssify new examples in the future.
 ### accuracy
 The ratio of examples whose labels are predicted correctly.
 $$\frac{true \ positive + true \ negative}{all  \ cases}$$
+
+### scalar  
+Simple numerical value, like 15 or -3.25. Variables or constants that take scalar valuees are denoted by an italic letter, like x or a.
+
+### vector
+An ordered list of scalar values.
