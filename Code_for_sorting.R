@@ -46,3 +46,4 @@ for (i in seq_along(def_ranges$term)) {
 
 data2 <- c(head, data2[!is.na(data2)])
 writeLines(paste(data2, collapse = "\n"))
+

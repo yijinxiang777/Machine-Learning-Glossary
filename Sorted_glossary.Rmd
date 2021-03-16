@@ -14,7 +14,7 @@ layout: page
 
 
 ### accuracy
-The ratio of examples whose labels are predicted correctly.
+The ratio of examples whose labels (outcomes) are predicted correctly.
 $$\frac{true \ positive + true \ negative}{all  \ cases}$$
 
 ### bag of words

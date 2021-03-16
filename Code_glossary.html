@@ -82,6 +82,28 @@ h6 {
 }
 </style>
 
+<style type="text/css">
+/* for pandoc --citeproc since 2.11 */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 
 
@@ -280,7 +302,7 @@ The goal is to use data to produce a model that takes features as input and outp
 </div>
 <div id="dataset" class="section level3">
 <h3>dataset</h3>
-<p>aaa</p>
+<p>A collection of examples.</p>
 </div>
 <div id="labeled-examples" class="section level3">
 <h3>labeled examples</h3>
@@ -288,30 +310,30 @@ The goal is to use data to produce a model that takes features as input and outp
 </div>
 <div id="feature-vector" class="section level3">
 <h3>feature vector</h3>
-<p>aaa</p>
+<p>A vector <strong>x</strong> in which each dimension <span class="math inline">\(\mathcal{j} = 1, \cdots , D\)</span> contains a value <span class="math inline">\(x^{(j)}\)</span>. We have a dataset of infant development, including weight, height, and head circumference. Assuming each example <strong>x</strong> in the dataset represents a patient, <span class="math inline">\(x^{(1)}\)</span> can denote the first feature (exposure), which is weight.</p>
 </div>
 <div id="feature" class="section level3">
 <h3>feature</h3>
-<p>aaa</p>
+<p>We also call it exposure and denote it as <span class="math inline">\(x^{(j)}\)</span>. The feature at position j in all the feature vectors always contains the same kind of information in one dataset. It means that if the second feature of the first patients <span class="math inline">\(x_{1}^{(2)}\)</span> in the dataset is weight, then the second feature of any patient <span class="math inline">\(x_{k}^{(2)}\)</span> will be weight.</p>
 </div>
 <div id="label" class="section level3">
 <h3>label</h3>
-<p>aaa</p>
+<p>We also call it outcome. labeled examples can be denoted as <span class="math inline">\(\left \{(x_{i}, y_{i}) \right \}_{i=1}^{N}\)</span>. <span class="math inline">\((x_{1}, y_{1})\)</span> represents the data for the first individual and every <span class="math inline">\(x_{i}\)</span> among N is called a feature vector.</p>
 </div>
-<div id="classes" class="section level3">
-<h3>classes</h3>
-<p>aaa</p>
+<div id="class" class="section level3">
+<h3>class</h3>
+<p>A set of values for a label(outcome) with finite categories. The label <span class="math inline">\(y_{i}\)</span> can be either an element belonging to a finite set of classes <span class="math inline">\(\left \{1,2,\cdots,C \right \}\)</span>, or a real number, or a more complex structure, like a vector, or a matrix. A set with two values can denote the class of any dichotomous outcome, such as {Yes, No}, {1, 0}.</p>
 </div>
 <div id="unsupurvised-learning" class="section level3">
 <h3>unsupurvised learning</h3>
 <p>An analysis of unlabeled (i.e., no outcome) data.<br />
 A collection of unlabeled variables is used to create a model that solves “practical problem” such as cluster detection, dimension reduction, or outlier detection.</p>
 <p><strong>Case study</strong><br />
-Plan to put the example of Kim (2020 here)</p>
+Plan to put the example of Kim <span class="citation">(Kim 2020)</span></p>
 </div>
-<div id="unlabled-exmples" class="section level3">
-<h3>unlabled exmples</h3>
-<p><span class="math inline">\(\{(x_{i})\}_{i=1}^{N}\)</span></p>
+<div id="unlabeled-example" class="section level3">
+<h3>unlabeled example</h3>
+<p>A dataset with only features (exposures) but no label (outcome), for example, a dataset of patients’ features (e.g., susceptibility to specific drugs), aiming to gain different subgroups. We denote it as <span class="math inline">\(\{(x_{i})\}_{i=1}^{N}\)</span>.</p>
 </div>
 <div id="model" class="section level3">
 <h3>model</h3>
@@ -329,13 +351,13 @@ Plan to put the example of Kim (2020 here)</p>
 <h3>semi-supervised learning</h3>
 <p>It is the same as supervised learning, except that there are more feature vectors (covariates) than there are labeled outputs (outcomes). The rationale is to improve performance of supervised learning model using more feature vectors. The goal is typically to develop an algorithm that predicts outcomes or classifies observations with both missing and observed outcome values.</p>
 <p>We can also call it regression with missing data - to train models on complete data, and use these models to predict outcomes for observations without outcomes.</p>
-<p><strong>Case study</strong><br />
+<p><strong>Case study</strong><span class="citation">(Naimi, Platt, and Larkin 2018)</span><br />
 <em>Background</em> Fetal weight and continuum of fetal growth have been identified as indicators for perinatal and childhood outcomes. However, most of the attempts to proxy the measurement were based on population referents and standards. <em>Methods</em> Fetal weight predictions for each gestational week per person were compared to actual fetal weight measurements obtained using standard ultrasound protocols. <span class="math inline">\(\gamma(Y|X=x)=h(x)\)</span></p>
 </div>
 <div id="reinforcement-learning" class="section level3">
 <h3>reinforcement learning</h3>
 <p>Machine lives in an environment and is capable of perceiving state. Machine executes actions that yield different rewards and move machine into another state. Goal of reinforcement learning is for machine to learn a “policy” - a function that takes feaeture vector as input (state) and outputs optimal action (i.e., maximizing expected average reward).</p>
-<p><strong>Case study</strong> Zhang and Bareinboim (2020)</p>
+<p><strong>Case study</strong> Zhang and Bareinboim (2020)<span class="citation">(Zhang, n.d.)</span></p>
 </div>
 <div id="bag-of-words" class="section level3">
 <h3>bag of words</h3>
@@ -383,15 +405,55 @@ Plan to put the example of Kim (2020 here)</p>
 </div>
 <div id="accuracy" class="section level3">
 <h3>accuracy</h3>
-<p>The ratio of examples whose labels are predicted correctly. <span class="math display">\[\frac{true \ positive + true \ negative}{all  \ cases}\]</span></p>
+<p>The ratio of examples whose labels (outcomes) are predicted correctly. <span class="math display">\[\frac{true \ positive + true \ negative}{all  \ cases}\]</span></p>
 </div>
+<div id="notation" class="section level2">
+<h2>Notation</h2>
 <div id="scalar" class="section level3">
 <h3>scalar</h3>
-<p>Simple numerical value, like 15 or -3.25. Variables or constants that take scalar valuees are denoted by an italic letter, like x or a.</p>
+<p>Simple numerical value, like 15 or -3.25. Variables or constants that take scalar values are denoted by an italic letter, like <em>x</em> or <em>a</em>.</p>
 </div>
 <div id="vector" class="section level3">
 <h3>vector</h3>
-<p>An ordered list of scalar values.</p>
+<p>An ordered list of scalar values. A vector are usually denoted as a bold character, for example, <strong>x</strong> or <strong>w</strong>. It can be visualized as arrows that point to some directions as well as points in a multi-dimensional space.</p>
+</div>
+<div id="matrix" class="section level3">
+<h3>matrix</h3>
+<p>A rectangular array of numbers arranged in rows and column. A matrix is usually denoted with bold capital letters, such as <strong>A</strong> or <strong>W</strong>.</p>
+</div>
+<div id="dimension" class="section level3">
+<h3>dimension</h3>
+</div>
+<div id="set" class="section level3">
+<h3>set</h3>
+<p>An unordered collection of unique elements. A set is often denoted as a calligraphic capital character, for example, <span class="math inline">\(\mathcal{S}\)</span>.</p>
+<ul>
+<li><p>intersection: obtaining a set with the common elements. <span class="math inline">\(\mathcal{S}_{1}\bigcap\mathcal{S}_{2}\)</span></p></li>
+<li><p>union: obtaining a set with all unique elements. <span class="math inline">\(\mathcal{S}_{1}\bigcup\mathcal{S}_{2}\)</span></p></li>
+</ul>
+</div>
+<div id="capital-sigma-notation" class="section level3">
+<h3>Capital Sigma Notation</h3>
+<p>The summation over a collection <span class="math inline">\(\mathcal{X} = \left \{x_{1}, x_{2},\cdots,x_{n-1}, x_{n}\right \}\)</span> or over the attributes of a vector <span class="math inline">\(\mathbf{X}=\left [x^{(1)}, x^{(2)},\cdots,x^{(m-1)}, x^{(m)} \right ]\)</span></p>
+<p>We denote it as: <span class="math inline">\(\sum_{i=1}^{n}x_{i} \overset{def}{=} x_{1}+x_{2}+\cdots +x_{n-1}+x_{n}\)</span> or <span class="math inline">\(\sum_{i=1}^{n}x^{i} \overset{def}{=} x^{(1)}+ x^{(2)}+ \cdots+ x^{(m-1)} + x^{(m)}\)</span></p>
+</div>
+<div id="capital-pi-notation" class="section level3">
+<h3>Capital Pi Notation</h3>
+</div>
+</div>
+<div id="reference" class="section level2 unnumbered">
+<h2 class="unnumbered">Reference</h2>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-RN1" class="csl-entry">
+Kim, Kwangho. 2020. <span>“Causal Inference with Complex Data Structures and Non-Standard Effects.”</span> Thesis.
+</div>
+<div id="ref-RN3" class="csl-entry">
+Naimi, Ashley I, Robert W Platt, and Jacob C Larkin. 2018. <span>“Machine Learning for Fetal Growth Prediction.”</span> Journal Article. <em>Epidemiology (Cambridge, Mass.)</em> 29 (2): 290.
+</div>
+<div id="ref-RN2" class="csl-entry">
+Zhang, Junzhe. n.d. <span>“Designing Optimal Dynamic Treatment Regimes: A Causal Reinforcement Learning Approach.”</span> Conference Proceedings. In <em>International Conference on Machine Learning</em>, 11012–22. PMLR.
+</div>
+</div>
 </div>
 
 

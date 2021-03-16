@@ -5,9 +5,11 @@ output:
   html_document:
     toc: yes
     toc_float: yes
+    toc_depth: 3
   html_notebook:
   #   toc: yes
   #  toc_float: yes
+bibliography: bibliography.bibtex
 minutes: 300
 layout: page
 ---
@@ -24,33 +26,36 @@ The goal is to use data to produce a model that takes features as input and outp
   
 
 ### dataset  
-aaa  
+A collection of examples.    
 
 ### labeled examples
 A dataset contains both outcome (label) and covraites (features), from which models learn, in supervised training .
 $\{(x_{i},y_{i})\}_{i=1}^{N}$  
 
 ### feature vector  
-aaa   
+A vector **x** in which each dimension $\mathcal{j} = 1, \cdots , D$ contains a value $x^{(j)}$. We have a dataset of infant development, including weight, height, and head circumference. Assuming each example **x** in the dataset represents a patient, $x^{(1)}$ can denote the first feature (exposure), which is weight.   
+
 
 ### feature  
-aaa  
+We also call it exposure and denote it as  $x^{(j)}$. The feature at position j in all the feature vectors always contains the same kind of information in one dataset. It means that if the second feature of the first patients $x_{1}^{(2)}$ in the dataset is weight, then the second feature of any patient $x_{k}^{(2)}$ will be weight.
 
 ### label  
-aaa  
+We also call it outcome. labeled examples can be denoted as $\left \{(x_{i}, y_{i}) \right \}_{i=1}^{N}$. $(x_{1}, y_{1})$ represents the data for the first individual and every $x_{i}$ among N is called a feature vector.   
 
-### classes  
-aaa  
+### class    
+
+A set of values for a label(outcome) with finite categories. The label $y_{i}$ can be either an element belonging to a finite set of classes $\left \{1,2,\cdots,C \right \}$, or a real number, or a more complex structure, like a vector, or a matrix. A set with two values can denote the class of any dichotomous outcome, such as {Yes, No}, {1, 0}.  
+
 
 ### unsupurvised learning
 An analysis of unlabeled (i.e., no outcome) data.   
 A collection of unlabeled variables is used to create a model that solves "practical problem" such as cluster detection, dimension reduction, or outlier detection.  
 
 **Case study**  
-Plan to put the example of Kim (2020 here)
+Plan to put the example of Kim [@RN1]
 
-### unlabled exmples
-$\{(x_{i})\}_{i=1}^{N}$    
+### unlabeled example
+A dataset with only features (exposures) but no label (outcome), for example, a dataset of patients' features (e.g., susceptibility to specific drugs), aiming to gain different subgroups. We denote it as $\{(x_{i})\}_{i=1}^{N}$.    
 
 ### model
 ### clustering
@@ -61,7 +66,7 @@ It is the same as supervised learning, except that there are more feature vector
 
 We can also call it regression with missing data - to train models on complete data, and use these models to predict outcomes for observations without outcomes.  
 
-**Case study**  
+**Case study**[@RN3]  
 *Background* Fetal weight and continuum of fetal growth have been identified as indicators for perinatal and childhood outcomes. However, most of the attempts to proxy the measurement were based on population referents and standards. 
 *Methods* Fetal weight predictions for each gestational week per person were compared to actual fetal weight measurements obtained using standard ultrasound protocols. $\gamma(Y|X=x)=h(x)$   
 
@@ -70,7 +75,7 @@ We can also call it regression with missing data - to train models on complete d
 Machine lives in an environment and is capable of perceiving state. Machine executes actions that yield different rewards and move machine into another state. Goal of reinforcement learning is for machine to learn a "policy" - a function that takes feaeture vector as input (state) and outputs optimal action (i.e., maximizing expected average reward).  
 
 **Case study** 
-Zhang and Bareinboim (2020)  
+Zhang and Bareinboim (2020)[@RN2]
 
 ### bag of words
 ### support vector machine (SVM)
@@ -108,11 +113,40 @@ How well the model will clssify new examples in the future.
 ### outliers
 
 ### accuracy
-The ratio of examples whose labels are predicted correctly.
-$$\frac{true \ positive + true \ negative}{all  \ cases}$$
+The ratio of examples whose labels (outcomes) are predicted correctly.
+$$\frac{true \ positive + true \ negative}{all  \ cases}$$   
+
+
+## Notation     
+
+
 
 ### scalar  
-Simple numerical value, like 15 or -3.25. Variables or constants that take scalar valuees are denoted by an italic letter, like x or a.
+Simple numerical value, like 15 or -3.25. Variables or constants that take scalar values are denoted by an italic letter, like *x* or *a*.
 
 ### vector
-An ordered list of scalar values.
+An ordered list of scalar values. A vector are usually denoted as a bold character, for example, **x** or **w**. It can be visualized as arrows that point to some directions as well as points in a multi-dimensional space.   
+
+
+### matrix  
+A rectangular array of numbers arranged in rows and column. A matrix is usually denoted with bold capital letters, such as **A** or **W**.
+
+### dimension
+
+### set 
+An unordered collection of unique elements. A set is often denoted as a calligraphic capital character, for example, $\mathcal{S}$.    
+
+- intersection: obtaining a set with the common elements. $\mathcal{S}_{1}\bigcap\mathcal{S}_{2}$  
+
+- union: obtaining a set with all unique elements. $\mathcal{S}_{1}\bigcup\mathcal{S}_{2}$  
+
+### Capital Sigma Notation  
+The summation over a collection $\mathcal{X} = \left \{x_{1}, x_{2},\cdots,x_{n-1}, x_{n}\right \}$ or over the attributes of a vector $\mathbf{X}=\left [x^{(1)}, x^{(2)},\cdots,x^{(m-1)}, x^{(m)} \right ]$ 
+
+We denote it as: 
+ $\sum_{i=1}^{n}x_{i} \overset{def}{=} x_{1}+x_{2}+\cdots +x_{n-1}+x_{n}$ or
+ $\sum_{i=1}^{n}x^{i} \overset{def}{=} x^{(1)}+  x^{(2)}+ \cdots+ x^{(m-1)} + x^{(m)}$
+
+### Capital Pi Notation   
+
+## Reference
