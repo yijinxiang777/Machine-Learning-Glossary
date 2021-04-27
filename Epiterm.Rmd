@@ -40,7 +40,7 @@ A real-valued vector w of the same dimensionality as our input feature vector $X
 $D$ is the number of dimensions of the feature vector $X$.  
 
 ### hyperparameters 
-
+The innate properties of each algorithm, which needed to be set or tuned by users. For example, the hyperparameter $\mathcal{C}$ for SVM determines the tradeoff between increasing the size of the decision boundary and ensuring the accuracy of assigning label to each example.  
 
 ### margin
 The distance between the closest examples of two classes, as defined by the decision boundary. A large margin contributes to a better generalization -  the performance of model when applied to classify external dataset in the future.
@@ -48,7 +48,7 @@ The distance between the closest examples of two classes, as defined by the deci
 
 
 ### kernels
-
+ (Yijin's comment: I am quite confused about this term. I think it is used when the linear decision boundary can't separate the examples well for SVM in the book, but I found it might also be used in other algorithm when googling.)
 
 
 ### scalar  
@@ -160,6 +160,7 @@ The ratio of examples whose labels (outcomes) are predicted correctly.
 $$\frac{true \ positive + true \ negative}{all  \ cases}$$   
 
 ### cost-sensitive accuracy
+A method to deal with the situation when different classes have varied importance. A cost (a positive number) will be assigned to both type of mistake: false positive and false negative to compute a cost-sensitive accuracy.
 
 ### area under the ROC curve (AUC)
 ROC curves use a combination of the recall (sensitivity) and false positive rate (1-specificity) to build up a summary figure of the classification performance.
