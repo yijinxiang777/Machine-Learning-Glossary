@@ -1,0 +1,179 @@
+---
+title: "Epi_term"
+author: "Yijin Xaing"
+date: "3/28/2021"
+output: 
+  html_document:
+    toc: yes
+    toc_float: yes
+    toc_depth: 3
+---
+
+Definitions and explanations of terms in the book [THE HUNDRED-PAGE MACHINE LEARNING BOOK](http://themlbook.com) written by Andriy Burkov  
+
+
+### feature vector  
+A vector **x** in which each dimension $\mathcal{j} = 1, \cdots , D$ contains a value $x^{(j)}$. We have a dataset of infant development, including weight, height, and head circumference. Assuming each example **x** in the dataset represents a patient, $x^{(1)}$ can denote the first feature (exposure), which is weight.   
+
+
+### feature  
+We also call it exposure and denote it as  $x^{(j)}$. The feature at position j in all the feature vectors always contains the same kind of information in one dataset. It means that if the second feature of the first patients $x_{1}^{(2)}$ in the dataset is weight, then the second feature of any patient $x_{k}^{(2)}$ will be weight. The process we transform raw data into a dataset is called feature engineering.
+
+### label  
+We also call it outcome. labeled examples can be denoted as $\left \{(x_{i}, y_{i}) \right \}_{i=1}^{N}$. $(x_{1}, y_{1})$ represents the data for the first individual and every $x_{i}$ among N is called a feature vector. Labeled example is a dataset contains both outcome (label) and covraites (features), from which models learn, in supervised training .
+$\{(x_{i},y_{i})\}_{i=1}^{N}$   
+
+### class    
+A set of values for a label(outcome) with finite categories. The label $y_{i}$ can be either an element belonging to a finite set of classes $\left \{1,2,\cdots,C \right \}$, or a real number, or a more complex structure, like a vector, or a matrix. A set with two values can denote the class of any dichotomous outcome, such as {Yes, No}, {1, 0}.   
+
+
+### unlabeled example
+A dataset with only features (exposures) but no label (outcome), for example, a dataset of patients' features (e.g., susceptibility to specific drugs), aiming to gain different subgroups. We denote it as $\{(x_{i})\}_{i=1}^{N}$.    
+
+
+
+### decision boundary
+The boundary separating the examples of different classes.   
+
+### parameters
+A real-valued vector w of the same dimensionality as our input feature vector $X$ $(WX)$: $(\omega)^{(1)}(x)^{(1)} + (\omega)^{(2)}(x)^{(2)}+ (\omega)^{(3)}(x)^{(3)}+...+(\omega)^{(D)}(x)^{(D)}$  
+$D$ is the number of dimensions of the feature vector $X$.  
+
+### hyperparameters 
+
+
+### margin
+The distance between the closest examples of two classes, as defined by the decision boundary. A large margin contributes to a better generalization -  the performance of model when applied to classify external dataset in the future.
+
+
+
+### kernels
+
+
+
+### scalar  
+Simple numerical value, like 15 or -3.25. Variables or constants that take scalar values are denoted by an italic letter, like *x* or *a*.
+
+### vector
+An ordered list of scalar values. A vector are usually denoted as a bold character, for example, **x** or **w**. It can be visualized as arrows that point to some directions as well as points in a multi-dimensional space.   
+
+
+### matrix  
+A rectangular array of numbers arranged in rows and column. A matrix is usually denoted with bold capital letters, such as **A** or **W**.
+
+### dimension
+The position of an attribute in the vector. For example, index j of $\mathcal{x}^{j}$ denotes the jth attribute in the vector $\mathcal{x}$.   
+
+### set 
+An unordered collection of unique elements. A set is often denoted as a calligraphic capital character, for example, $\mathcal{S}$.    
+
+- intersection: obtaining a set with the common elements. $\mathcal{S}_{1}\bigcap\mathcal{S}_{2}$  
+
+- union: obtaining a set with all unique elements. $\mathcal{S}_{1}\bigcup\mathcal{S}_{2}$  
+
+### capital sigma notation  
+The summation over a collection $\mathcal{X} = \left \{x_{1}, x_{2},\cdots,x_{n-1}, x_{n}\right \}$ or over the attributes of a vector $\mathbf{X}=\left [x^{(1)}, x^{(2)},\cdots,x^{(m-1)}, x^{(m)} \right ]$ 
+
+We denote it as: 
+ $\sum_{i=1}^{n}x_{i} \overset{def}{=} x_{1}+x_{2}+\cdots +x_{n-1}+x_{n}$ or
+ $\sum_{i=1}^{n}x^{i} \overset{def}{=} x^{(1)}+  x^{(2)}+ \cdots+ x^{(m-1)} + x^{(m)}$
+
+### capital pi notation   
+A product of elements in a collection or attributes of a vector.  
+
+We denote it as:  
+$\prod_{i=1}^{n}x_{i}\overset{def}{=} x_{1}\cdot x_{2}\cdot_{\ \cdots}\cdot x_{n-1}\cdot x_{n}$  
+
+### classification 
+A problem of automatically assigning a label to an unlabeled example. Diagnosis of the disease presence is an example of classification. There are two types of classification: binary classification and multiclass classification.
+
+
+### model based learning and instance-based learning
+Model-based learning algorithms train parameters for specific model by learning training data.   
+Instance-based learning algorithms assign a label seen most frequent in close neighborhood  of the input example to an input. 
+
+### shallow learning and deep learning     
+ 
+
+### loss function and cost function
+The loss function is the expression we want to minimize when applying learning algorithms. We calculate the average loss function as cost function and we also call it as empirical risk.
+For instance, we want to minimize the expression $(f_{w,b}(X_{i})-y_{i})^{2}$ in linear regression $f_{w,b}(X)=WX+b$. We call the $\frac{1}{N}\sum_{i=1}^{N}(f_{w,b}(X_{i})-y_{i})^{2}$ as the corresponding cost function.
+
+### overfitting and underfitting
+Two properties of a model concerning the abilities to predict labels using both training data and data weren't seen during data training (i.e., testing data).
+
+The inability of a model to predict well the labels of the training data is called underfitting.  
+
+We call a model overfitting when it can predict very well the labels of examples using training data while it is unable to predict well the labels of examples using data unseen during data training.
+
+
+### gradient descent and stochastic gradient descent  
+Two most frequently used optimization algorithms found in cases where the optimization criterion (i.e., a cost function) is differentiable.    
+
+Gradient descent is an interactive algorithm and aims to find a local minimum of a function, by starting at some random point and taking steps proportional to the negative of the gradient (or approximate gradient) of the function at the current point. (Yijin's Comment: I still find this expression a little bit confusion, not sure whether we should provide an example here)
+
+
+### one-hot encoding   
+
+Transferring a categorical feature into a vector of numerical values (i.e., dummy variables). For instance, we have a outcome variable of "disease" and this feature has three possible values, "diabetes","hypertension","disease-free", you can transform this feature into a vector of three numerical values.
+$$
+\begin{aligned}
+diabetes = [1,0,0]\\ 
+hypertension=[0,1,0]\\
+disease-free = [0,0,1]
+\end{aligned}
+$$  
+  
+### binning  
+ 
+Categorizing a continuous feature into multiple binary features called bins or buckets. For example, Body Mass Index (BMI) is a continuous feature and we can present BMI as four new features, "underweight", "normal", "overweight",and "obese".  
+
+### normalization  
+
+The process of transforming an actual range of possible values for a numerical feature, into a standard range of values, typically [-1,1] or [0,1]. Normalizing the data can lead to an increased speed of learning. 
+
+### standardization  
+
+The process of rescaling the feature values so that they have the properties of a standard normal distribution ($X\sim N(0,1)$).
+
+### regularization  
+
+Methods forcing the learning algorithm to build a less complex model, which often leads to slightly higher bias but significantly reduces the variance.     
+
+### confusion matrix  
+
+A table comparing predicted values generated by a classification model and true values.  
+
+|               | Yes(Predicted)      | No(Predicted)       |   |   |
+|---------------|---------------------|---------------------|---|---|
+| **Yes(True)** | True Positive (TP)  | False Negative (FN) |   |   |
+| **No(True)**  | False Positive (FP) | True Negative (TN)  |   |   |
+|               |                     |                     |   |   |   
+
+### precision and recall
+We also call precision as positive predictive value (PPV) and call recall as sensitivity.
+$$precision\overset{def}{=}\frac{true \ positive}{true \ positive + false \ postive}$$
+$$recall\overset{def}{=}\frac{true \ positive}{true \ positive + false \ negative}$$
+### accuracy  
+
+The ratio of examples whose labels (outcomes) are predicted correctly.
+$$\frac{true \ positive + true \ negative}{all  \ cases}$$   
+
+### cost-sensitive accuracy
+
+### area under the ROC curve (AUC)
+ROC curves use a combination of the recall (sensitivity) and false positive rate (1-specificity) to build up a summary figure of the classification performance.
+$$sensitivity\overset{def}{=}\frac{true \ positive}{true \ positive + false \ negative}$$
+$$specificity\overset{def}{=}\frac{true \ negative}{true \ negative + false \ positive}$$
+### hyperparameter tuning  
+
+The experimental process of finding the best combination of values, one per hyperparameter.    
+Grid search is the most simple hyperparameter tuning technique. 
+
+### cross-validation   
+
+The process for tuning hyperparameters used especially when there's few training examples. 
+
+It can be summarized into four steps: 1) fix the values of the hyperparameters for the methods you chose; 2) randomly split the training set into several subsets of the same size, which is called fold (e.g., $\left \{F_1, F_2,F_3,F_4,F_5\right \}$ denotes five folds and each $F_k$ contains 20% of your training data); 3)train five models and four folds for each model (e.g., Model 1 $\mathcal{f}_1$ will be trained based on $F_2,F_3,F_4,F_5$ and $F_1$ will be validation set ); 4) apply the average values of each iteration as the final value.   
+
+
