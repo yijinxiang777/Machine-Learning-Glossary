@@ -36,7 +36,6 @@ Each of these three examples demonstrate that one should rarely ever develop and
 
 As many of the examples above demonstrate, the successful implementation of any machine learning or artificial intelligence algorithms depends on an awareness of how these methods perform in different settings, and on the options available to researchers for tailoring these methods to the problems and data at hand. To this end, we provide here a contextualized glossary of terms to facilitate understanding of some of the details required to appropriately use ML/AI methods in epidemiologic research. Our glossary is contextualized insofar as we attempt to directly link concepts in ML/AI with epidemiologic concepts and terms. As we will show, relying on many of the core concepts and practices in epidemiology can do much to improve the quality and interpretability of ML/AI implementations. 
 
-* Placeholder for Table of Content (Must not be removed) <newline> {:toc}  
   
   
 ```markdown
