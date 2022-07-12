@@ -1,7 +1,7 @@
 ---
 ---
 ## Machine Learning for Epidemiologists: A Glossary of Terms and Applications
-
+{:toc}
 
 ### Introduction  
 
