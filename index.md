@@ -3,8 +3,6 @@
 ## Machine Learning for Epidemiologists: A Glossary of Terms and Applications
 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
 ### Introduction  
 
 Recent years have witnessed a tremendous increase in both interest and use of machine learning (ML) and artificial intelligence (AI) methods in epidemiologic research.[cite a bunch]  Though there are no generally accepted definitions of machine learning or artificial intelligence,[cite Burkov] both tend to focus on or involve identifying relevant patterns in data, or minimizing modeling assumptions.[cite] The fields of ML and AI are immensely complex, and can be implicated in a number of different areas that are relevant to epidemiologic research and practice. These may include predictive analytics, causal inference, automation via specific (versus general) AI, nonparametric (versus parametric) estimation; and supervised, semi-supervised, or unsupervised learning. Because of its increasing popularity, epidemiologists are needing to better understand these fields, their associated complexities, and their relevance or irrelevance to epidemiologic research and practice.   
@@ -223,16 +221,8 @@ diabetes=[1,0,0] hypertension=[0,1,0] depression=[0,0,1]
 An alternative feature engineering approach, known as binning, takes a continuous variable and categorizes it into multiple binary features called bins or buckets. For example, we may be interested in how categories of maternal BMI predict preterm birth. We would take our continuous maternal BMI data point and transform it into four bins. All values of BMI <18.5 are added to the “underweight” bin,  18.5 to 25 to the “normal weight” bin, 25 to 30 in the “overweight”, and values >30 in the “obese” bin. 
 One way to improve the speed of learning is through normalization. This type of feature engineering transforms the feature into a standard range of values. Typically this is between the interval [-1, 1] or [0,1]. The general formula for normalization is:
 x(j)=x(j)-min(j)max(j)-min(j), where min(j)and max(j) represent the minimum and maximum value of the original feature, respectively. Normalization is not a necessary component of feature engineering; however, it is used 
-Standardization 2
+
+### Standardization 
 The process of rescaling the feature values so that they have the properties of a standard normal distribution (XN(0,1)).
 
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yijinxiang777/Machine-Learning/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
