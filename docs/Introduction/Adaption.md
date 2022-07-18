@@ -9,6 +9,9 @@ nav_order: 2
 {: .no_toc }
 
 ---
+### Machine Learning in Practice: Adapting to Problems and Challenges  
+
+
 Machine Learning and Artificial Intelligence implementations often try to balance two counterposing objectives. On the one hand, machine learning scientists and programmers often rely on variable abstraction to develop generalizable software programs that do not accommodate specific contextual features of the data. On the other hand, the most successful implementations of machine learning have to account for issues or problems that arise when a specific dataset is used to generate an algorithm with a specific purpose.   
 
 For example, Caruana et al (2015) relied on generalized additive models (GAMs) to develop an algorithm for triaging high risk pneumonia patients for hospitalization versus lower risk pneumonia patients for outpatient treatment. However, in its initial implementation, the algorithm predicted that individuals with asthma were less likely to die from pneumonia, compared to non-asthmatics. Additional exploration suggested that this unexpected association was explained by the fact that hospital protocol dictated that asthmatic patients with pneumonia were immediately transferred to the ICU, where they received a higher quality of care compared to the general population. For this reason, asthmatic patients had a lower mortality risk. To address this, the authors incorporated a rule-based logistic regression model that would override their initial GAMs when the training data observation was an asthmatic patient, even if the accuracy of the resulting meta-model was lower than the original ML algorithm. 
