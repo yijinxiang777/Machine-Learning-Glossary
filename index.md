@@ -7,7 +7,7 @@ Table of Contents
 
   * [Introduction](#Introduction)   
   * [Machine Learning and Artificial Intelligence](#Machine-Learning-and-Artificial-Intelligence)  
-  * [Machine Learning in Practice: Adapting to Problems/Challenges](#Machine-Learning-in-Practice:-Adapting-to-Problems-and-Challenges)   
+  * [Machine Learning in Practice: Adapting to Problems and Challenges](#Machine-Learning-in-Practice:-Adapting-to-Problems-and-Challenges)   
   * [Machine Learning and Artificial Intelligence: Glossary of Terms](#Machine-Learning-and-Artificial-Intelligence:-Glossary-of-Terms)  
         * [supervised learning](#supervised-learning)   
         * [unsupervised learning](#unsupervised-learning)  
@@ -30,7 +30,7 @@ Furthermore, the goals of AI have long been explicit, and are generally divided 
 
 Despite their distinct origins, today ML and AI share a lot in common. Importantly, there are no generally accepted definitions of machine learning and artificial intelligence. AI is often described as a "branch of computer science that studies the properties of intelligence by synthesizing intelligence" [@AI100]. ML is often described as the "automated detection of meaningful patterns in data"]. Yet, in their modern forms, it is difficult to identify differences between these two areas of research and application. Both areas have been heavily influenced by developments in neural networks and deep learning, while ML or AI based on symbol manipulation are no longer a focus of research and application.
 
-### Machine Learning in Practice: Adapting to Problems/Challenges
+### Machine Learning in Practice: Adapting to Problems and Challenges
 Machine Learning and Artificial Intelligence implementations often try to balance two counterposing objectives. On the one hand, machine learning scientists and programmers often rely on variable abstraction to develop generalizable software programs that do not accommodate specific contextual features of the data. On the other hand, the most successful implementations of machine learning have to account for issues or problems that arise when a specific dataset is used to generate an algorithm with a specific purpose.   
 
 For example, Caruana et al (2015) relied on generalized additive models (GAMs) to develop an algorithm for triaging high risk pneumonia patients for hospitalization versus lower risk pneumonia patients for outpatient treatment. However, in its initial implementation, the algorithm predicted that individuals with asthma were less likely to die from pneumonia, compared to non-asthmatics. Additional exploration suggested that this unexpected association was explained by the fact that hospital protocol dictated that asthmatic patients with pneumonia were immediately transferred to the ICU, where they received a higher quality of care compared to the general population. For this reason, asthmatic patients had a lower mortality risk. To address this, the authors incorporated a rule-based logistic regression model that would override their initial GAMs when the training data observation was an asthmatic patient, even if the accuracy of the resulting meta-model was lower than the original ML algorithm. 
