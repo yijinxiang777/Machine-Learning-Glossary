@@ -10,8 +10,6 @@ nav_order: 1
 
 ---
 
-### Machine Learning and Artificial Intelligence  
-
 Simply stated, "Artificial intelligence is not intelligence. Machine learning is not learning."[cite Burkov  (2019 p4)] What a typical "learning machine" does is find a math formula which, when applied to collection of inputs (training data), produces outputs [@Burkov2019]. Whether a particular implementation of a machine learning algorithm is successful or not is often marked by how “desirable” the outputs are. The “desirability” of the outputs of a ML algorithm is often defined using precise mathematics. As we discuss in more detail below, without a fundamental understanding of what these mathematical equations imply, researchers can easily misinterpret whether the outputs of a given ML algorithm are meaningfully useful or “optimal” in a practical sense. 
 Understanding why these fields are termed “machine learning” and “artificial intelligence”, and the history of their development, may provide some protection against the hype and misplaced expectations of research and application in these areas. Machine learning and artificial intelligence were so named primarily for marketing reasons. For example, Arthur Samuel coined the term “machine learning” in 1959 while at IBM to attract clients and employees with the idea of cutting edge feats of technology.[cite the Mitchell book; is there something in Waldrop Complexity book?; can we find something by Arthur Samuel?]   
 
