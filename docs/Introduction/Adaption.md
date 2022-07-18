@@ -2,7 +2,6 @@
 layout: default
 title: Machine Learning in Practice: Adapting to Problems and Challenges
 parent: Introduction
-has_children: true
 nav_order: 2
 ---
 
