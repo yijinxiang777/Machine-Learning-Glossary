@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Glossary of Terms
-nav_order: 2
+nav_order: 3
 ---
 
 # Machine Learning and Artificial Intelligence: Glossary of Terms
