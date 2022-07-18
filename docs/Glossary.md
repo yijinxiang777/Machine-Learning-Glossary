@@ -1,13 +1,12 @@
 ---
 layout: default
-title: Configuration
+title: Glossary of Terms
 nav_order: 2
 ---
 
-# Machine Learning and Artificial Intelligence: Glossary of Terms]
+# Machine Learning and Artificial Intelligence: Glossary of Terms
 {: .no_toc }
 
-Just the Docs has some specific configuration parameters that can be defined in your Jekyll site's \_config.yml file.
 {: .fs-6 .fw-300 }
 
 ## Table of contents
@@ -65,11 +64,11 @@ Parameters are part of the model learned from the dataset, which usually doesn�
 Hyperparameters are the innate properties of each algorithm, which needs to be set in advance or tuned by users. For example, number of knots and polynomial degrees are two hyperparameters for Spline regression. Another common example of hyperparameter in ML would be the hyperparameter C for SVM,  determining the tradeoff between increasing the size of the decision boundary and ensuring the accuracy of assigning labels to each example.
 The experimental process of finding the best combination of values for hyperparameters is called tuning. Grid search is the most simple hyperparameter tuning technique.
 
-#### Margin 2
+#### Margin 
 
 The distance between the closest examples of two classes, as defined by the decision boundary. A large margin contributes to a better generalization - the performance of the model when applied to classify external dataset in the future.
 
-#### Kernels 2  
+#### Kernels 
 
 (Yijin’s comment: I am quite confused about this term. I think it is used when the linear decision boundary can’t separate the examples well for SVM in the book, but I found it might also be used in other algorithms when googling.) [ain: not sure how useful this will be, but there is a core definition that i think we can try to articulate]
 
