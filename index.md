@@ -7,7 +7,7 @@ Table of Contents
 
   * [Introduction](#Introduction)   
   * [Machine Learning and Artificial Intelligence](#Machine-Learning-and-Artificial-Intelligence)  
-  * [Machine Learning in Practice: Adapting to Problems/Challenges](#Machine-Learning-in-Practice:-Adapting-to-Problems/Challenges)   
+  * [Machine Learning in Practice: Adapting to Problems/Challenges](#Machine-Learning-in-Practice:-Adapting-to-Problems-and-Challenges)   
   * [Machine Learning and Artificial Intelligence: Glossary of Terms](#Machine-Learning-and-Artificial-Intelligence:-Glossary-of-Terms)  
         * [supervised learning](#supervised-learning)   
         * [unsupervised learning](#unsupervised-learning)  
