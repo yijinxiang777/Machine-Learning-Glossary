@@ -7,10 +7,13 @@ Table of Contents
 
   * [Introduction](#Introduction)   
   * [Machine Learning and Artificial Intelligence](#Machine-Learning-and-Artificial-Intelligence)  
-  * [Machine Learning in Practice: Adapting to Problems and Challenges](#Machine-Learning-in-Practice:-Adapting-to-Problems-and-Challenges)   
-  * [Machine Learning and Artificial Intelligence: Glossary of Terms](#Machine-Learning-and-Artificial-Intelligence:-Glossary-of-Terms)  
+  * [Machine Learning in Practice: Adapting to Problems and Challenges](#Machine-Learning-in-Practice)   
+  * [Machine Learning and Artificial Intelligence: Glossary of Terms](#Machine-Learning-and-Artificial-Intelligence)  
         * [supervised learning](#supervised-learning)   
         * [unsupervised learning](#unsupervised-learning)  
+   
+
+{% include toc.html html=content %}
 
 ### Introduction  
 
@@ -30,7 +33,7 @@ Furthermore, the goals of AI have long been explicit, and are generally divided 
 
 Despite their distinct origins, today ML and AI share a lot in common. Importantly, there are no generally accepted definitions of machine learning and artificial intelligence. AI is often described as a "branch of computer science that studies the properties of intelligence by synthesizing intelligence" [@AI100]. ML is often described as the "automated detection of meaningful patterns in data"]. Yet, in their modern forms, it is difficult to identify differences between these two areas of research and application. Both areas have been heavily influenced by developments in neural networks and deep learning, while ML or AI based on symbol manipulation are no longer a focus of research and application.
 
-### Machine Learning in Practice: Adapting to Problems and Challenges
+### Machine Learning in Practice
 Machine Learning and Artificial Intelligence implementations often try to balance two counterposing objectives. On the one hand, machine learning scientists and programmers often rely on variable abstraction to develop generalizable software programs that do not accommodate specific contextual features of the data. On the other hand, the most successful implementations of machine learning have to account for issues or problems that arise when a specific dataset is used to generate an algorithm with a specific purpose.   
 
 For example, Caruana et al (2015) relied on generalized additive models (GAMs) to develop an algorithm for triaging high risk pneumonia patients for hospitalization versus lower risk pneumonia patients for outpatient treatment. However, in its initial implementation, the algorithm predicted that individuals with asthma were less likely to die from pneumonia, compared to non-asthmatics. Additional exploration suggested that this unexpected association was explained by the fact that hospital protocol dictated that asthmatic patients with pneumonia were immediately transferred to the ICU, where they received a higher quality of care compared to the general population. For this reason, asthmatic patients had a lower mortality risk. To address this, the authors incorporated a rule-based logistic regression model that would override their initial GAMs when the training data observation was an asthmatic patient, even if the accuracy of the resulting meta-model was lower than the original ML algorithm. 
@@ -41,7 +44,7 @@ Often, machine learning algorithms are developed to maximize certain features of
 
 Each of these three examples demonstrate that one should rarely ever develop and implement a general machine learning algorithm in any given setting. Rather, one should seek to incorporate contextual factors relevant to the research question at hand that may have a bearing on how the algorithm performs. In effect, these examples demonstrate the importance of context and subject matter specifics when constructing ML/AI algorithms.  
 
-### Machine Learning and Artificial Intelligence: Glossary of Terms  
+### Machine Learning and Artificial Intelligence 
 
 As many of the examples above demonstrate, the successful implementation of any machine learning or artificial intelligence algorithms depends on an awareness of how these methods perform in different settings, and on the options available to researchers for tailoring these methods to the problems and data at hand. To this end, we provide here a contextualized glossary of terms to facilitate understanding of some of the details required to appropriately use ML/AI methods in epidemiologic research. Our glossary is contextualized insofar as we attempt to directly link concepts in ML/AI with epidemiologic concepts and terms. As we will show, relying on many of the core concepts and practices in epidemiology can do much to improve the quality and interpretability of ML/AI implementations. 
 
