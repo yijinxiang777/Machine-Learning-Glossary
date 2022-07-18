@@ -13,9 +13,10 @@ Table of Contents
         * [unsupervised learning](#unsupervised-learning)  
    
 
-{% include toc.html html=content %}
+
 
 ### Introduction  
+{: .d-inline-block }
 
 Recent years have witnessed a tremendous increase in both interest and use of machine learning (ML) and artificial intelligence (AI) methods in epidemiologic research.[cite a bunch]  Though there are no generally accepted definitions of machine learning or artificial intelligence,[cite Burkov] both tend to focus on or involve identifying relevant patterns in data, or minimizing modeling assumptions.[cite] The fields of ML and AI are immensely complex, and can be implicated in a number of different areas that are relevant to epidemiologic research and practice. These may include predictive analytics, causal inference, automation via specific (versus general) AI, nonparametric (versus parametric) estimation; and supervised, semi-supervised, or unsupervised learning. Because of its increasing popularity, epidemiologists are needing to better understand these fields, their associated complexities, and their relevance or irrelevance to epidemiologic research and practice.   
 
