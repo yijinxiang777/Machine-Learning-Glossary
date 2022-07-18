@@ -2,10 +2,14 @@
 layout: default
 title: Machine Learning in Practice: Adapting to Problems and Challenges
 parent: Introduction
+has_children: true
 nav_order: 2
 ---
 
+# Machine Learning in Practice
+{: .no_toc }
 
+---
 ### Machine Learning in Practice
 Machine Learning and Artificial Intelligence implementations often try to balance two counterposing objectives. On the one hand, machine learning scientists and programmers often rely on variable abstraction to develop generalizable software programs that do not accommodate specific contextual features of the data. On the other hand, the most successful implementations of machine learning have to account for issues or problems that arise when a specific dataset is used to generate an algorithm with a specific purpose.   
 
