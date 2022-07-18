@@ -2,7 +2,6 @@
 layout: default
 title: Machine Learning and Artificial Intelligence
 parent: Introduction
-has_children: true
 nav_order: 1
 ---
 
