@@ -2,7 +2,7 @@
 layout: default
 title: Machine Learning and Artificial Intelligence
 parent: Home
-nav_order: 1
+nav_order: 2
 ---
 
 # Machine Learning and Artificial Intelligence
