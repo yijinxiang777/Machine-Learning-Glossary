@@ -2,7 +2,7 @@
 layout: default
 title: Machine Learning in Practice
 parent: Home
-nav_order: 2
+nav_order: 3
 ---
 
 # Machine Learning in Practice: Adapting to Problems and Challenges
