@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Machine Learning and Artificial Intelligence
-parent: Introduction
+parent: Home
 nav_order: 1
 ---
 
