@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Machine Learning in Practice
-parent: Introduction
+parent: Home
 nav_order: 2
 ---
 
