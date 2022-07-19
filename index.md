@@ -15,10 +15,9 @@ At present, research on the developments and techniques of machine learning and 
 
 The purpose of this paper is to provide an entryway into the complex fields of ML and AI for epidemiologists. Here, we discuss general aspects of the fields of ML and AI relevant to epidemiologists. These include the role and challenges of ML and AI in pattern recognition, prediction, causal discovery, and causal inference. We articulate some of the challenges in the fields of ML and AI, and indicate why they are important to consider when using ML and AI methods in epidemiologic settings. Finally, we provide a glossary of introductory and intermediate terms and concepts to facilitate comprehension, and better integrate ML and AI into epidemiologic research. Importantly, we note that ML and AI methods are not a cure for poor quality data, and emphasize the importance of data integrity, broadly defined, in considering the use of ML and AI techniques in epidemiology.  
 
-We can provide the profiles of our three here as well.
 
 #### Thank you to the contributors of Just the Docs!
-
+###### Dr. Naimi and Erin's link will be added here if you make some modification on the code.
 <ul class="list-style-none">
 {% for contributor in site.github.contributors %}
   <li class="d-inline-block mr-1">
